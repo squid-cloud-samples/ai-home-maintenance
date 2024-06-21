@@ -1,0 +1,27 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+      overflow: hidden; /* Ensure the main container doesn't scroll */
+
+}
+
+button {
+  border: none;
+}
+
+div {
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  min-height: 80%;
+
+}
+
+
+

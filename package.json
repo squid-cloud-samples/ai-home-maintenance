@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "prettier": "prettier --write \"./**/src/**/*.{ts,js,tsx,jsx,md,mdx}\""
+  },
+  "dependencies": {
+    "prettier": "^3.0.3"
+  }
+}

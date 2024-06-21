@@ -1,0 +1,5 @@
+# This .env file contains sensitive information and should not be committed to source control
+.env
+node_modules
+dist
+

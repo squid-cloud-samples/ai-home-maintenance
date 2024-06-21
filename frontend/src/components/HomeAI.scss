@@ -1,0 +1,28 @@
+.chatbot {
+    margin-top: 34px;
+    flex: 1;
+}
+
+.scrolling {
+  width: 100%;
+  overflow-y: auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  border: 2px;
+  border-color: rgba(0, 0, 0, .05);
+  border-style: solid;
+}
+
+.messages {
+  text-align: left;
+  width:100%;
+}
+
+div.question {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
