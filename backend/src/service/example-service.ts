@@ -21,12 +21,6 @@ export class ExampleService extends SquidService {
     return true;
   }
 
-  @webhook('createSchedule')
-  async testSchedule(): Promise<string> {
-    await this.createMaintenanceSchedule();
-    return 'done';
-  }
-
   @webhook('delete')
   async deleteAllDocs(): Promise<void> {
     const docs = await this.squid.collection('tasks').query().snapshot();
