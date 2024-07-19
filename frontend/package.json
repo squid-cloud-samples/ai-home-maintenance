@@ -16,7 +16,7 @@
     "@mui/material": "^5.14.14",
     "@squidcloud/client": "^1.0.239",
     "@squidcloud/react": "^1.0.51",
-    "@squidcloud/samples": "^1.0.11",
+    "@squidcloud/samples": "^1.0.12",
     "@squidcloud/ui": "^1.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
