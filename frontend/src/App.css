@@ -4,7 +4,7 @@
   text-align: center;
   width: 100%;
       overflow: hidden; /* Ensure the main container doesn't scroll */
-
+  background: var(--color-grey-light-bg3, #F1F3F9);
 }
 
 button {
@@ -20,7 +20,24 @@ div {
   display: flex;
   align-items: start;
   min-height: 80%;
+}
 
+.heading {
+  color: var(--Light-bg2, #F8F9FC);
+  font-family: Degular;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 35px */
+  letter-spacing: 1px;
+  display: flex;
+  padding: 12px 32px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: var(--Boarder-Radius-rounded-l, 12px) var(--Boarder-Radius-rounded-l, 12px) 0px 0px;
+  border: 0px solid var(--color-grey-light-line1, #E1E6EF);
+  background: var(--color-grey-dark-line1, #3F444D);
 }
 
 

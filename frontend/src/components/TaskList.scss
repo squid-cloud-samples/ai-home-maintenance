@@ -5,13 +5,13 @@
   margin-top: 34px;
   flex: 1;
   overflow-y: auto;
-  height: 800px;
+  padding: 0px 10px 10px 10px;
 
   &__column {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    // gap: 12px;
+    padding: 0px 10px 10px 10px;
   }
 }
 

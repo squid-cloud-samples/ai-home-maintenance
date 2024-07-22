@@ -1,6 +1,10 @@
 .chatbot {
-    margin-top: 34px;
-    flex: 1;
+  margin-top: 34px;
+  flex: 1.3;
+  border-radius: 12px;
+  border: 0px solid var(--color-grey-light-line1, #E1E6EF);
+  background: var(--Light-bg1, #FFF);
+  padding: 0px;
 }
 
 .scrolling {
@@ -9,20 +13,42 @@
   height: 500px;
   display: flex;
   justify-content: center;
-  border: 2px;
-  border-color: rgba(0, 0, 0, .05);
-  border-style: solid;
 }
 
 .messages {
   text-align: left;
-  width:100%;
+  width: 100%;
 }
 
 div.question {
+  display: flex;
+  padding: 48px 32px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: stretch;
+}
+
+.inputFrame {
   margin: 0 auto;
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
-  background-color: #ffffff;
+  border-radius: var(--Boarder-Radius-rounded-l, 12px);
+  border: 1px solid var(--Light-line1, #E1E6EF);
+  background: var(--Light-bg2, #F8F9FC);
+}
+
+.inputQuestion {
+  flex-shrink: 0;
+  border-style: none;
+  background: var(--Light-bg2, #F8F9FC);
+  width: 90%;
+  resize: vertical;
+  padding-right: 50px;
+}
+
+.flexBtn {
+  background-color: var(--Light-bg2, #F8F9FC);
 }
