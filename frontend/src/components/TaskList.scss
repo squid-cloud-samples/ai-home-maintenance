@@ -15,11 +15,21 @@
   }
 }
 
-.header {
-  background-color: rgba(0, 0, 0, .05);
-  color: #212121;
-  text-align: left;
-  padding: 10px;
-  padding-left: 30px;
-  font-size: 1.4em;
+.heading {
+  color: var(--Light-bg2, #f8f9fc);
+  font-family: Degular;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 35px */
+  letter-spacing: 1px;
+  display: flex;
+  padding: 12px 32px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: var(--Boarder-Radius-rounded-l, 12px)
+    var(--Boarder-Radius-rounded-l, 12px) 0px 0px;
+  border: 0px solid var(--color-grey-light-line1, #e1e6ef);
+  background: var(--color-grey-dark-line1, #3f444d);
 }

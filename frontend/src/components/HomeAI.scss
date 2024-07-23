@@ -38,6 +38,7 @@ div.question {
   border-radius: var(--Boarder-Radius-rounded-l, 12px);
   border: 1px solid var(--Light-line1, #E1E6EF);
   background: var(--Light-bg2, #F8F9FC);
+  padding: 20px;
 }
 
 .inputQuestion {
@@ -46,7 +47,7 @@ div.question {
   background: var(--Light-bg2, #F8F9FC);
   width: 90%;
   resize: vertical;
-  padding-right: 50px;
+  
 }
 
 .flexBtn {

@@ -6,21 +6,21 @@
   color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  --light-bg2: #F8F9FC;
-  --light-line1: #F8F9FC;
+  --light-bg2: #f8f9fc;
+  --light-line1: #f8f9fc;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-      overflow: hidden; /* Ensure the main container doesn't scroll */
-
+  overflow: hidden; /* Ensure the main container doesn't scroll */
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
-  margin: 0; 
-  padding: 0; 
-  overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {

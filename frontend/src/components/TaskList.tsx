@@ -1,8 +1,7 @@
-import TaskCard from "./TaskCard";
-import "./TaskList.scss";
+import TaskCard from './TaskCard';
+import './TaskList.scss';
 import { MaintenanceTask } from './common/types';
 import '@squidcloud/ui/styles/index.css';
-
 
 type PropTypes = {
   items: Array<MaintenanceTask>;

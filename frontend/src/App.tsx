@@ -5,7 +5,6 @@ import { useCollection, useQuery } from '@squidcloud/react';
 import { MaintenanceTask } from './components/common/types';
 import ExplainModal from './components/ExplainModal';
 
-
 function App() {
   const taskCollection = useCollection<MaintenanceTask>('tasks');
   const { data } = useQuery(taskCollection.query().dereference());
@@ -22,8 +21,10 @@ function App() {
 
   return (
     <div>
-      <h1>Household Maintenance</h1>
-      <ExplainModal />
+      <div className="backgroundImg">
+        <h1>Household Maintenance</h1>
+        <ExplainModal />
+      </div>
       <div className="container">
         <HomeAI />
         <TaskList
