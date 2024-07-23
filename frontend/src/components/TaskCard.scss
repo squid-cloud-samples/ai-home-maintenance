@@ -1,12 +1,18 @@
-@import "@squidcloud/ui/styles/colors";
+@import '@squidcloud/ui/styles/colors';
 
 .item-card {
   display: flex !important;
   flex-direction: row !important;
-  align-items: center !important;
-
+  align-items: flex-start;
+  padding: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   &.completed {
     opacity: 0.5;
+  }
+
+  &__left {
+    padding: 10px;
   }
 
   &__content {
@@ -15,8 +21,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
-
     text-align: left;
+    padding: 10px;
   }
 
   &__image {
@@ -36,9 +42,8 @@
     align-items: center;
     gap: 8px;
     cursor: pointer;
-
+    padding: 10px;
     button {
-      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -47,14 +52,37 @@
     }
 
     .trash-icon {
-      width: 20px;
-      height: 20px;
+      padding: 10px;
+      width: 32px;
+      height: 32px;
       cursor: pointer;
+      border-radius: var(--Boarder-Radius-rounded-m, 10px);
+      background: var(--brand-primary2, rgba(15, 105, 255, 0.1));
     }
 
     input {
       width: 24px;
       height: 24px;
+    }
+
+    .taskTitle {
+      color: var(--color-grey-light-text1, #212121);
+      font-family: Degular;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 125%;
+      letter-spacing: 1px;
+    }
+
+    .description {
+      color: var(--color-grey-light-text1, #212121);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.029px;
     }
   }
 }

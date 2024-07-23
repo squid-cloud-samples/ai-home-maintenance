@@ -1,18 +1,24 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   width: 100%;
-      overflow: hidden; /* Ensure the main container doesn't scroll */
-
+  overflow: hidden;
+  background: var(--color-grey-light-bg3, #f1f3f9);
 }
 
 button {
   border: none;
 }
 
-div {
-  padding: 10px;
+h1 {
+  color: var(--color-grey-light-bg1, #fff);
+  text-align: center;
+  font-family: 'Degular Display';
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 1.12px;
 }
 
 .container {
@@ -20,8 +26,18 @@ div {
   display: flex;
   align-items: start;
   min-height: 80%;
-
+  padding: 20px;
 }
 
-
-
+.backgroundImg {
+  padding: 40px 20px 40px 20px;
+  background-image: url('../public/hero-img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  height: 200px;
+}
