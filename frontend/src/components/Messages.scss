@@ -1,14 +1,15 @@
+@import '@squidcloud/ui/styles/colors';
+
 .messages {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Space between messages */
+  gap: 10px;
   padding: 20px;
 }
 
 .message-container {
   display: flex;
-  //   align-items: flex-start;
-  gap: 8px; /* Space between icon and message */
+  gap: 8px;
 }
 
 .message-container.user {
@@ -17,7 +18,7 @@
 
 .message-container.ai {
   justify-content: flex-start;
-  gap: 8px; /* Space between icon and message */
+  gap: 8px;
 }
 
 .message {
@@ -57,8 +58,8 @@
 }
 
 .ai-icon {
-  width: 32px; /* Adjust size as needed */
-  height: 32px; /* Adjust size as needed */
-  margin-right: 8px; /* Space between icon and message */
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
   align-self: flex-end;
 }

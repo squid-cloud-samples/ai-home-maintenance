@@ -2,7 +2,7 @@
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  overflow: hidden; /* Ensure the main container doesn't scroll */
+  overflow: hidden;
   background: var(--color-grey-light-bg3, #f1f3f9);
 }
 
@@ -17,7 +17,7 @@ h1 {
   font-size: 56px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 67.2px */
+  line-height: 120%;
   letter-spacing: 1.12px;
 }
 
@@ -32,8 +32,8 @@ h1 {
 .backgroundImg {
   padding: 40px 20px 40px 20px;
   background-image: url('../public/hero-img.png');
-  background-size: cover; /* Cover the entire div */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;

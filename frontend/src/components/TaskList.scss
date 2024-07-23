@@ -1,3 +1,5 @@
+@import '@squidcloud/ui/styles/colors';
+
 .item-list {
   display: flex;
   width: 100%;
@@ -21,7 +23,7 @@
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
-  line-height: 125%; /* 35px */
+  line-height: 125%;
   letter-spacing: 1px;
   display: flex;
   padding: 12px 32px;

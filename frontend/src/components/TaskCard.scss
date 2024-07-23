@@ -3,7 +3,7 @@
 .item-card {
   display: flex !important;
   flex-direction: row !important;
-  align-items: flex-start; /* Align buttons to the start */
+  align-items: flex-start;
   padding: 24px;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -71,19 +71,17 @@
       font-size: 28px;
       font-style: normal;
       font-weight: 600;
-      line-height: 125%; /* 35px */
+      line-height: 125%;
       letter-spacing: 1px;
     }
 
     .description {
       color: var(--color-grey-light-text1, #212121);
-
-      /* Web Breakpoints/LG/paragraph */
       font-family: Inter;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 150%; /* 24px */
+      line-height: 150%;
       letter-spacing: -0.029px;
     }
   }
