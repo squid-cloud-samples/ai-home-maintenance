@@ -11,14 +11,14 @@ button {
 }
 
 h1 {
-  color: var(--color-grey-light-bg1, #FFF);
-text-align: center;
-font-family: "Degular Display";
-font-size: 56px;
-font-style: normal;
-font-weight: 600;
-line-height: 120%; /* 67.2px */
-letter-spacing: 1.12px;
+  color: var(--color-grey-light-bg1, #fff);
+  text-align: center;
+  font-family: 'Degular Display';
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 67.2px */
+  letter-spacing: 1.12px;
 }
 
 .container {
@@ -34,10 +34,10 @@ letter-spacing: 1.12px;
   background-image: url('../public/hero-img.png');
   background-size: cover; /* Cover the entire div */
   background-position: center; /* Center the background image */
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   display: flex;
-flex-direction: column;
-align-items: center;
-gap: 32px;
-height: 200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  height: 200px;
 }

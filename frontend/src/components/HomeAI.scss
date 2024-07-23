@@ -2,8 +2,8 @@
   margin-top: 34px;
   flex: 1.3;
   border-radius: 12px;
-  border: 0px solid var(--color-grey-light-line1, #E1E6EF);
-  background: var(--Light-bg1, #FFF);
+  border: 0px solid var(--color-grey-light-line1, #e1e6ef);
+  background: var(--Light-bg1, #fff);
   padding: 0px;
 }
 
@@ -36,20 +36,19 @@ div.question {
   display: flex;
   justify-content: space-between;
   border-radius: var(--Boarder-Radius-rounded-l, 12px);
-  border: 1px solid var(--Light-line1, #E1E6EF);
-  background: var(--Light-bg2, #F8F9FC);
+  border: 1px solid var(--Light-line1, #e1e6ef);
+  background: var(--Light-bg2, #f8f9fc);
   padding: 20px;
 }
 
 .inputQuestion {
   flex-shrink: 0;
   border-style: none;
-  background: var(--Light-bg2, #F8F9FC);
+  background: var(--Light-bg2, #f8f9fc);
   width: 90%;
   resize: vertical;
-  
 }
 
 .flexBtn {
-  background-color: var(--Light-bg2, #F8F9FC);
+  background-color: var(--Light-bg2, #f8f9fc);
 }
