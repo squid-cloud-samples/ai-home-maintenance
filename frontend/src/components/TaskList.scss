@@ -7,13 +7,16 @@
   margin-top: 34px;
   flex: 1;
   overflow-y: auto;
-  padding: 0px 10px 10px 10px;
 
   &__column {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     padding: 0px 10px 10px 10px;
+  }
+
+  .dividedTasks {
+    padding: 0px 0px 24px 0px;
   }
 }
 

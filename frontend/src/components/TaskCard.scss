@@ -13,6 +13,11 @@
 
   &__left {
     padding: 10px;
+
+    .check-icon {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__content {
@@ -58,11 +63,6 @@
       cursor: pointer;
       border-radius: var(--Boarder-Radius-rounded-m, 10px);
       background: var(--brand-primary2, rgba(15, 105, 255, 0.1));
-    }
-
-    input {
-      width: 24px;
-      height: 24px;
     }
 
     .taskTitle {
