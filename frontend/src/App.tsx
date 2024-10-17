@@ -11,7 +11,7 @@ function App() {
   const { data } = useQuery(taskCollection.query().dereference());
   const [question, setQuestion] = useState('');
   const { history, chat, complete } = useAiChatbot(
-    'maintenance',
+    'ai_agents',
     'maintenance-scheduler',
   );
 
