@@ -27,11 +27,9 @@ const TaskCard = ({
         />
       </div>
       <div className="item-card__content">
-        <h4 className="taskTitle">{appliance}</h4>
-        <span className="description">{task}</span>
-        <span>
-          <i>{interval}</i>
-        </span>
+        <span className="item-card__content__title">{appliance}</span>
+        <span className="item-card__content__description">{task}</span>
+        <span className="item-card__content__interval">{interval}</span>
         <span>{lastUpdated}</span>
       </div>
       <div className="item-card__buttons">

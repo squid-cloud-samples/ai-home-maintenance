@@ -11,12 +11,12 @@ const Messages: React.FC<ChatHistoryProps> = ({ messages }) => {
   return (
     <div className="messages">
       {messages.map(({ id, message, type }) => (
-        <div key={id} className={`message-container ${type}`}>
+        <div key={id} className={`messages__container ${type}`}>
           {type === 'ai' && (
             <img
-              src={'../../public/Avatar.png'}
+              src={'/Avatar.png'}
               alt="AI Icon"
-              className="ai-icon"
+              className="messages__container__ai-icon"
             />
           )}
           <div key={id} className={`message ${type}`}>

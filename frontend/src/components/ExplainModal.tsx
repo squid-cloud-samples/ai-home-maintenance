@@ -29,11 +29,7 @@ const ExplainModal = () => {
 
   return (
     <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
+      className="modal"
     >
       <button className="sq-btn" onClick={openModal}>
         Learn more

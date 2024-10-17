@@ -1,49 +1,38 @@
-import { ChangeEvent, useState } from 'react';
 import { LinearProgress } from '@mui/material';
 import Messages from './messages';
-import { useAiChatbot } from '@squidcloud/react';
 import '@squidcloud/ui/styles/index.css';
 import './HomeAI.scss';
+import { ChatMessage } from '@squidcloud/react';
+import { ChangeEvent } from 'react';
 
-function HomeAI() {
-  const [question, setQuestion] = useState('');
-  const { history, chat, complete } = useAiChatbot(
-    'maintenance',
-    'maintenance-scheduler',
-  );
+type PropTypes = {
+  messages: ChatMessage[];
+  questionChanged: (e: ChangeEvent<HTMLTextAreaElement>) => void;
+  question: string;
+  complete: boolean;
+  checkKey: (ele: React.KeyboardEvent<HTMLTextAreaElement>) => void;
+  askQuestion: () => void;
+};
 
-  function askQuestion() {
-    chat(question, { functions: ['checkTasksAI', 'createTaskItem'] });
-    setQuestion('');
-  }
+const HomeAI: React.FC<PropTypes> = ({messages, questionChanged, question, complete, checkKey, askQuestion}) => {
 
-  function questionChanged(e: ChangeEvent<HTMLTextAreaElement>) {
-    setQuestion(e.target.value);
-  }
-
-  function checkKey(ele: React.KeyboardEvent<HTMLTextAreaElement>) {
-    if (ele.key === 'Enter') {
-      askQuestion();
-    }
-  }
 
   return (
-    <div className="chatbot">
-      <div className="heading">Chatbot</div>
-      <div className="scrolling">
-        <Messages messages={history} />
+    <div className="chat">
+      <div className="chat__heading">Chatbot</div>
+      <div className="chat__scrolling">
+        <Messages messages={messages} />
       </div>
-
-      <div className="question">
-        <div className="inputFrame">
+      <div className="chat__question">
+        <div className="chat__question__input-frame">
           <textarea
-            className="inputQuestion"
+            className="chat__question__input-frame__input-question"
             onChange={questionChanged}
             onKeyDown={(event) => checkKey(event)}
             value={question}
           />
           <button
-            className="flexBtn"
+            className="chat__question__input-frame__flex-btn"
             disabled={!complete}
             onClick={askQuestion}
           >

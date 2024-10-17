@@ -15,7 +15,7 @@ export class ExampleService extends SquidService {
     return true;
   }
 
-  // Allow anybody to chat with the home-knowledge profile chatbot
+  // Allow anybody to chat with the home-knowledge AI agent
   @secureAiChatbot('maintenance', 'all', 'maintenance-scheduler')
   allowAllAccessToChatbot(): boolean {
     return true;

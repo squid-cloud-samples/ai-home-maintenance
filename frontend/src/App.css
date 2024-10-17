@@ -13,7 +13,7 @@ button {
 h1 {
   color: var(--color-grey-light-bg1, #fff);
   text-align: center;
-  font-family: 'Degular Display';
+  font-family: 'Inter';
   font-size: 56px;
   font-style: normal;
   font-weight: 600;
@@ -26,12 +26,13 @@ h1 {
   display: flex;
   align-items: start;
   min-height: 80%;
-  padding: 20px;
+  padding: 20px 50px;
+  justify-content: space-between;
 }
 
-.backgroundImg {
-  padding: 40px 20px 40px 20px;
-  background-image: url('../public/hero-img.png');
+.background-img {
+  padding: 40px 20px;
+  background-image: url('/hero-img.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

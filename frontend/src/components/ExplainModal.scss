@@ -1,5 +1,10 @@
-@import '@squidcloud/ui/styles/colors';
+.modal {
+  color: var(--Light-text1, #212121);
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .create-modal__buttons {
   display: flex;
   flex-direction: column;

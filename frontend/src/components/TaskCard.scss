@@ -1,4 +1,4 @@
-@import '@squidcloud/ui/styles/colors';
+@use '@squidcloud/ui/styles/colors';
 
 .item-card {
   display: flex !important;
@@ -23,6 +23,36 @@
     gap: 4px;
     text-align: left;
     padding: 10px;
+
+    &__title {
+      color: var(--color-grey-light-text1, #212121);
+      font-family: Inter;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 125%;
+      letter-spacing: 1px;
+    }
+
+    &__description {
+      color: var(--color-grey-light-text1, #212121);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.029px;
+    }
+
+    &__interval {
+      color: var(--color-grey-light-text1, #212121);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.029px;
+    }
   }
 
   &__image {
@@ -33,7 +63,7 @@
 
   &__created,
   &__updated {
-    color: $text3;
+    color: colors.$text3;
     font-size: 12px;
   }
 
@@ -63,26 +93,6 @@
     input {
       width: 24px;
       height: 24px;
-    }
-
-    .taskTitle {
-      color: var(--color-grey-light-text1, #212121);
-      font-family: Degular;
-      font-size: 28px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 125%;
-      letter-spacing: 1px;
-    }
-
-    .description {
-      color: var(--color-grey-light-text1, #212121);
-      font-family: Inter;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%;
-      letter-spacing: -0.029px;
     }
   }
 }

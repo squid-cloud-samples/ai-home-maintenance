@@ -13,7 +13,7 @@ const TaskList = ({ items, onDelete, onToggle }: PropTypes) => {
   return (
     <div className="item-list">
       <div className="item-list__column">
-        <h3 className="heading">Open Tasks</h3>
+        <h3 className="item-list__column__heading">Open Tasks</h3>
         <div style={{ padding: '0px' }}>
           {items
             .filter((item) => !item.completed)
@@ -26,7 +26,7 @@ const TaskList = ({ items, onDelete, onToggle }: PropTypes) => {
               />
             ))}
         </div>
-        <h3 className="heading">Completed Tasks</h3>
+        <h3 className="item-list__column__heading">Completed Tasks</h3>
         <div style={{ padding: '0px' }}>
           {items
             .filter((item) => item.completed)
