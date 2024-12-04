@@ -1,4 +1,6 @@
-import { secureDatabase, SquidService, secureAiChatbot, aiFunction, webhook } from '@squidcloud/backend';
+import { secureDatabase, SquidService, secureAiChatbot, aiFunction, webhook, secureAiAgent, WebhookRequest } from '@squidcloud/backend';
+import { Get, Query, Route } from 'tsoa';
+
 
 export type MaintenanceTask = {
   __id: string;
@@ -10,12 +12,15 @@ export type MaintenanceTask = {
 };
 
 export class ExampleService extends SquidService {
+
+
   @secureDatabase('all', 'built_in_db')
   allowAllAccessToBuiltInDb(): boolean {
     return true;
   }
 
   // Allow anybody to chat with the home-knowledge AI agent
+  @secureAiAgent('chat', 'maintenance-scheduler')
   @secureAiChatbot('maintenance-scheduler', 'chat')
   allowAllAccessToChatbot(): boolean {
     return true;
@@ -27,6 +32,13 @@ export class ExampleService extends SquidService {
     docs.map((doc) => {
       doc.delete();
     });
+  }
+
+  @webhook('talkToAgent')
+  async talkToAgent(context: WebhookRequest) {
+    const prompt = context.queryParams["prompt"];
+    const response = await this.squid.ai().agent('maintenance-scheduler').ask(prompt);
+    return response;
   }
 
   @aiFunction(
