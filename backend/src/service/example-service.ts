@@ -1,28 +1,8 @@
-import { secureDatabase, SquidService, secureAiChatbot, aiFunction, webhook, secureAiAgent, WebhookRequest } from '@squidcloud/backend';
-import { Get, Query, Route } from 'tsoa';
-
-
-export type MaintenanceTask = {
-  __id: string;
-  task: string;
-  interval: string;
-  appliance: string;
-  lastUpdated?: string;
-  completed: boolean;
-};
+import { secureDatabase, SquidService, aiFunction, webhook, WebhookRequest } from '@squidcloud/backend';
 
 export class ExampleService extends SquidService {
-
-
   @secureDatabase('all', 'built_in_db')
   allowAllAccessToBuiltInDb(): boolean {
-    return true;
-  }
-
-  // Allow anybody to chat with the home-knowledge AI agent
-  @secureAiAgent('chat', 'maintenance-scheduler')
-  @secureAiChatbot('maintenance-scheduler', 'chat')
-  allowAllAccessToChatbot(): boolean {
     return true;
   }
 

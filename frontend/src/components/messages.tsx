@@ -14,9 +14,12 @@ const Messages: React.FC<ChatHistoryProps> = ({ messages }) => {
         <div key={id} className={`messages__container ${type}`}>
           {type === 'ai' && (
             <img
-              src={'/Avatar.png'}
+              src={'/avatar.svg'}
               alt="AI Icon"
               className="messages__container__ai-icon"
+              style={{
+                borderRadius: 16
+              }}
             />
           )}
           <div key={id} className={`message ${type}`}>
